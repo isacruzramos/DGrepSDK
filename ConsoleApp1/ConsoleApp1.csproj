@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BC9F5319-E652-4F3C-9EF2-2BE432D90564}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>ConsoleApp1</RootNamespace>
+    <AssemblyName>ConsoleApp1</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Cfx.Assert, Version=132.300.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\DstsAuthentication.master.3.0.2.721\lib\net462\Cfx.Assert.dll</HintPath>
+    </Reference>
+    <Reference Include="MdsActiveClient, Version=88.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\MdsActiveClient.1.0.88.22\lib\net462\MdsActiveClient.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Azure.KeyVault.Core, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Azure.KeyVault.Core.1.0.0\lib\net40\Microsoft.Azure.KeyVault.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Azure.Monitoring.DGrep.DataContracts.External, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6e60c1fe21f23fa9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Azure.Monitoring.DGrep.DataContracts.External.3.2.2\lib\net462\Microsoft.Azure.Monitoring.DGrep.DataContracts.External.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Azure.Monitoring.DGrep.SDK, Version=1.0.0.0, Culture=neutral, PublicKeyToken=6e60c1fe21f23fa9, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Azure.Monitoring.DGrep.SDK.3.2.2\lib\net462\Microsoft.Azure.Monitoring.DGrep.SDK.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Azure.SecurityResponse.Client, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\SecurityResponseClient.1.0.9.149\lib\net45\Microsoft.Azure.SecurityResponse.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Azure.SecurityResponse.Common, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\SecurityResponseClient.1.0.9.149\lib\net45\Microsoft.Azure.SecurityResponse.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Azure.Storage.Common, Version=11.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Azure.Storage.Common.11.2.2\lib\net452\Microsoft.Azure.Storage.Common.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.IdentityModel, Version=3.5.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\DstsAuthentication.master.3.0.2.721\lib\net462\Microsoft.IdentityModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Security.Authentication, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\DstsAuthentication.master.3.0.2.721\lib\net462\Microsoft.WindowsAzure.Security.Authentication.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Security.Authentication.Contracts, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\DstsAuthentication.master.3.0.2.721\lib\net462\Microsoft.WindowsAzure.Security.Authentication.Contracts.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Security.Authentication.Helpers.PassiveAuthHelper, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\DstsAuthentication.master.3.0.2.721\lib\net462\Microsoft.WindowsAzure.Security.Authentication.Helpers.PassiveAuthHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Security.Authentication.Logging, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\DstsAuthentication.master.3.0.2.721\lib\net462\Microsoft.WindowsAzure.Security.Authentication.Logging.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Security.CredentialsManagement.Client, Version=4.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\DsmsCredentialsManagement.4.4.195590\lib\net462\Microsoft.WindowsAzure.Security.CredentialsManagement.Client.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Security.CredentialsManagement.StorageHelper, Version=4.4.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\DsmsCredentialsManagement.4.4.195590\lib\net462\Microsoft.WindowsAzure.Security.CredentialsManagement.StorageHelper.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.WindowsAzure.Security.TestUtilities, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\DstsAuthentication.master.3.0.2.721\lib\net462\Test\Microsoft.WindowsAzure.Security.TestUtilities.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="RetryEngine, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\DstsAuthentication.master.3.0.2.721\lib\net462\RetryEngine\RetryEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.IdentityModel" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Net.Http.Formatting, Version=5.2.7.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.5.2.7\lib\net45\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DGrepLibrary.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Extensions\Microsoft.WindowsAzure.Security.Authentication.Events.man" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <Import Project="..\packages\DsmsCredentialsManagement.4.4.195590\build\DsmsCredentialsManagement.targets" Condition="Exists('..\packages\DsmsCredentialsManagement.4.4.195590\build\DsmsCredentialsManagement.targets')" />
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\DsmsCredentialsManagement.4.4.195590\build\DsmsCredentialsManagement.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\DsmsCredentialsManagement.4.4.195590\build\DsmsCredentialsManagement.targets'))" />
+  </Target>
+</Project>

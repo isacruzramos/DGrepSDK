@@ -1,0 +1,74 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Cfx.Assert</name>
+    </assembly>
+    <members>
+        <member name="T:Microsoft.Windows.Azure.Fabric.Assert.ImpossibleException">
+            <summary>Represents errors that the implementation believed were not possible to occur.</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Azure.Fabric.Assert.ImpossibleException.#ctor">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Windows.Azure.Fabric.Assert.ImpossibleException"/> class.
+            </summary>
+        </member>
+        <member name="M:Microsoft.Windows.Azure.Fabric.Assert.ImpossibleException.#ctor(System.String)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Windows.Azure.Fabric.Assert.ImpossibleException"/> class with a specified error message.
+            </summary>
+            <param name="message">The error message that explains the reason for the exception.</param>
+        </member>
+        <member name="M:Microsoft.Windows.Azure.Fabric.Assert.ImpossibleException.#ctor(System.String,System.Exception)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Windows.Azure.Fabric.Assert.ImpossibleException"/> class with a specified error message and
+            a reference to the inner exception that is the cause of this exception.
+            </summary>
+            <param name="message">The error message that explains the reason for the exception.</param>
+            <param name="innerException">
+            The exception that is the cause of the current exception, or <see langword="null"/> if no inner exception is
+            specified.
+            </param>
+        </member>
+        <member name="M:Microsoft.Windows.Azure.Fabric.Assert.ImpossibleException.#ctor(System.Runtime.Serialization.SerializationInfo,System.Runtime.Serialization.StreamingContext)">
+            <summary>
+            Initializes a new instance of the <see cref="T:Microsoft.Windows.Azure.Fabric.Assert.ImpossibleException"/> class with serialized data.
+            </summary>
+            <param name="info">
+            The <see cref="T:System.Runtime.Serialization.SerializationInfo"/> that holds the serialized object data about the exception being thrown.
+            </param>
+            <param name="context">
+            The <see cref="T:System.Runtime.Serialization.StreamingContext"/> that contains contextual information about the source or destination.
+            </param>
+        </member>
+        <member name="T:Microsoft.Windows.Azure.Fabric.Assert.Incomplete">
+            <summary>Represents the ability to make assertions regarding incomplete implementation.</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Azure.Fabric.Assert.Incomplete.Assert(System.Boolean,System.String)">
+            <summary>
+            Asserts that a condition is a temporary requirement for continuing execution given the current incomplete
+            implementation.
+            </summary>
+            <param name="condition">The condition to assert.</param>
+            <param name="conditionText">The text representation of the condition being asserted.</param>
+            <remarks>
+            This method should only be used to assert conditions that are not guaranteed and should be handled
+            appropriately by the implementation before it is complete. Use of this method documents for the author that
+            he or she has further work to do for the implementation to be complete.
+            </remarks>
+        </member>
+        <member name="T:Microsoft.Windows.Azure.Fabric.Assert.Invariant">
+            <summary>Represents the ability to make assertions regarding invariants.</summary>
+        </member>
+        <member name="M:Microsoft.Windows.Azure.Fabric.Assert.Invariant.Assert(System.Boolean,System.String)">
+            <summary>Asserts that a condition is an invariant (a condition that should always hold true).</summary>
+            <param name="condition">The condition to assert.</param>
+            <param name="conditionText">The text representation of the condition being asserted.</param>
+            <remarks>
+            This method should only be used to assert true invariants: conditions that are logically impossible to
+            violate, such as postconditions guaranteed by the framework or preconditions guaranteed previously by the
+            implementation. Use of this method documents for the reader that the author considered the condition and
+            determined it to be impossible.
+            </remarks>
+        </member>
+    </members>
+</doc>
